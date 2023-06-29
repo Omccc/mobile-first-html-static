@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEVELOPERS Designers</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="container-header">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="style/img/logo.jpg" alt="logo"></a>
+      </div>
+
+      <nav>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="slider-container">
+      <div class="menu-dots">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+      </div>
+
+      <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+      <img class="slide-img" src="style/img/macbook.jpg">
+
+      <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+      <img class="slide-img" src="style/img/ultra-light.jpg">
+
+      <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+      <img class="slide-img" src="style/img/visit-japan.jpg">
+
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="presentation">
+    <div class="presentation-text">
+      <h1>DEVELOPERS Designers</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        et minima eligendi est molestiae praesentium unde, molestias
+        distinctio dolorum deserunt impedit, illum, laborum amet facere
+        voluptas sunt. Deserunt laudantium, quasi soluta enim itaque
+        voluptatum! Libero numquam quo ipsa rerum temporibus quae vitae
+        quibusdam molestias quod fuga, eum, nemo qui nihil.</p>
+    </div>
+    <div class="presentation-img">
+      <img class="code" src="style\img\code-1839406_1280.jpg" alt="macbook">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Something</h1>
+          
+      <h2>Contact</h2>
+      
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Media</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Rubrique</a>
+            <hr>
+          </li>
+  
+          <li>
+            <a href="about-us.html">About us</a>
+          </li>
+              
+          <li>
+            <a href="contact-us.html">Contact US</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Technology</h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Legal</a>
+            <hr>
+          </li>
+          
+          <li>
+            <a href="#">Politique de confidentialités</a>
+          </li>
+          
+          <li>
+            <a href="#">Conditions</a>
+          </li>
+          
+          <li>
+            <h2 class="nav__title">Legal</h2>
+            <a href="#">Socials</a>
+            <hr>
+          </li>
+          <div class="Socials-class">
+          <li>
+            <a href="#"><img src="style\img\facebook.png" alt=""></a>
+          </li>
+          
+          <li>
+            <a href="#"><img src="style\img\twitter.png" alt=""></a>
+          </li>
+          <li>
+            <a href="#"><img src="style\img\rss.png" alt=""></a>
+          </li>
+        </div>
+        </ul>
+      </li>
+      
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&nbsp; &copy; 2023 Copyright CCI FORMATION Developers Designers</p>
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var slides = document.querySelectorAll(".slide-input");
+      var dots = document.querySelectorAll(".menu-dots label");
+      var currentIndex = 0;
+
+      function showSlide(index) {
+        if (index < 0 || index >= slides.length) {
+          return;
+        }
+
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].checked = false;
+          dots[i].classList.remove("active");
+        }
+
+        slides[index].checked = true;
+        dots[index].classList.add("active");
+
+        currentIndex = index;
+      }
+
+      for (var i = 0; i < dots.length; i++) {
+        dots[i].addEventListener("click", function () {
+          var index = parseInt(this.getAttribute("for").split("-")[1]) - 1;
+          showSlide(index);
+        });
+      }
+
+      function nextSlide() {
+        var nextIndex = currentIndex + 1;
+        if (nextIndex >= slides.length) {
+          nextIndex = 0;
+        }
+        showSlide(nextIndex);
+      }
+
+      function prevSlide() {
+        var prevIndex = currentIndex - 1;
+        if (prevIndex < 0) {
+          prevIndex = slides.length - 1;
+        }
+        showSlide(prevIndex);
+      }
+
+      var nextButton = document.querySelector(".slider-container .next");
+      var prevButton = document.querySelector(".slider-container .prev");
+
+      if (nextButton) {
+        nextButton.addEventListener("click", nextSlide);
+      }
+
+      if (prevButton) {
+        prevButton.addEventListener("click", prevSlide);
+      }
+
+      showSlide(currentIndex);
+    });
+  </script>
+</body>
+
+</html>

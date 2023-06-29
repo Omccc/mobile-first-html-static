@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+
+  background-color: rgb(244, 244, 244);
+  border: solid black ;
+  height: 1400px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.PresentationEntreprise1{
+  
+text-align:justify;
+height: 350px;
+width: 1400px;
+display: flex;
+margin: 50px;
+border-radius: 60px;
+
+/* background-color: rgb(209, 185, 228); */
+
+}
+
+.NotreActivite{  
+ 
+  text-align: right;
+  height: 350px;
+  width: 1400px;
+  margin: 50px;
+  background-color:  rgba(248, 243, 243, 0.808);
+  border-radius: 60px;
+
+}
+
+.PresentationPersonnes{
+  text-align: left;
+  height: 125px;
+  width: 1400px;
+  margin: 50px;
+  justify-content:space-between;
+  display: flex;
+  background-color:  rgba(248, 243, 243, 0.808);
+  border-radius: 30px ;
+  
+
+}
+
+.Personne1{
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  
+}
+
+.Personne2
+{
+
+  font-weight: bold;
+  text-align: left;
+
+}
+
+
+.Personne3
+{
+  font-weight: bold;
+  text-align:left;
+
+}
+
+.conteneurFlex{
+
+  display: flex;
+  flex-flow: row ;
+  margin: 10px;
+  border: 2px solid black;
+
+}
+
+
+.image{
+  
+  width: 600px;
+  height: 800px;
+  display: flex;
+  border-right: 380px;
+  margin-left: 290px;
+  margin-top: 50px;
+  padding-top: 2%;
+  
+}
+
+.image2{
+
+  padding-right: 550px;
+
+}
+  
+.imagesp
+{
+  height: 30px;
+  height: 140px;
+  display: flex;
+  margin: 25px;
+
+}
+
+
+.equipe{
+
+  height: 5px;
+  width: 5px;
+}
+
+
+.titres{
+  font-size: larger;
+  color: black;
+  border-radius: 20px;
+  text-align:center;
+  background-color: rgb(177, 204, 219);
+  margin: 10px;
+  opacity: 0.65;
+}
+
+.zoom{
+width: 250px;
+height: 140px;
+overflow: hidden;
+transition: transform .1s;
+
+margin-bottom: 20px;
+}
+
+.zoom1{
+width: 450px;
+height: 220px;
+overflow: hidden;
+transition: transform .1s;
+
+margin-bottom: 20px;
+
+
+}
+
+.zoom:hover{
+
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.zoom1:hover{
+
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
