@@ -12,9 +12,11 @@
 
     <title>Mobile First Statique</title>
 
-    <link rel="stylesheet" href="assets/css/w3css.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-    <link rel="icon" href="images/3151589_bubble_chat_geek_message_icon.svg"
+    <link rel="stylesheet" href="Projet-Mobile-First-Git/assets/css/w3css.css">
+    <link rel="stylesheet"
+      href="Projet-Mobile-First-Git/assets/css/font-awesome.css">
+    <link rel="icon"
+      href="Projet-Mobile-First-Git/images/3151589_bubble_chat_geek_message_icon.svg"
       type="image/svg+xml">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -28,12 +30,12 @@
 
     section{
       scroll-margin-top: 50px;
-      
+
     }
 
     #home{
       height: 350px;
-      background-image: url(images/cup-of-coffee.jpg) ;
+      background-image: url(Projet-Mobile-First-Git/images/cup-of-coffee.jpg) ;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -53,11 +55,10 @@
 
     h1,h2,h3{
       color: blue;
+      text-align: center;
     }
 
-    h3{
-      margin: 50px;
-    }
+   
 
     h1{text-align: center;
     font-style: italic;
@@ -71,9 +72,16 @@
   color: #000;}
 
 
+  aside{
+    text-align:end;
+    background-color: white;
+  }
+
+
 
     body{
       background-color: rgba(255, 255, 255, 0.8);
+      height: max-content;
     }
 
     
@@ -83,13 +91,19 @@
     font-family: 'Pacifico', cursive; 
    }
 
+   h3{
+    text-align:left;
+    text-decoration:underline ;
+   }
+
+     
    p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
 
    @font-face {
     font-family: WorldDiscovery ;
-    src: url(assets/fonts/WorldDiscovery_PERSONAL_USE_ONLY.otf);
+    src: url(Projet-Mobile-First-Git/assets/fonts/WorldDiscovery_PERSONAL_USE_ONLY.otf);
    }
 
    h1{
@@ -119,8 +133,21 @@ h1:hover{
   background-color: red;
 }
 
+p{
+  text-align:justify;
 
-   
+}
+
+iframe{
+  border-radius: 8%;
+}
+
+/*.carte{
+  position: relative;
+  top: 40px;
+}*/
+
+
  
   
 
@@ -144,8 +171,8 @@ h1:hover{
 
         <a href="#home" class="w3-bar-item w3-button" onclick="homeHideNavbar()">
           <img style="width: 50px;"
-            src="images/3151589_bubble_chat_geek_message_icon.svg"
-            alt="My geek logo"></a>
+            src="Projet-Mobile-First-Git/images/4202098_github_code_developer_logo_icon.svg"
+            alt="My GH logo"></a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
         <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
@@ -182,36 +209,44 @@ h1:hover{
     <section id="about">
       <h2 data-aos="fade-left">About</h2>
       <div class="w3-row">
-        <div class="w3-half w3-padding"><img src="images/code-1076536_1280.jpg"
+        <div class="w3-half w3-padding"><img
+            src="Projet-Mobile-First-Git/images/code-1076536_1280.jpg"
             alt="exemple" class="w3-image" data-aos="fade-down"
             data-aos-duration="3000"></div>
         <div class="w3-half" data-aos="fade-left" data-aos-duration="2000">
-          
-          
-          Lorem ipsum dolor sit amet consectetur
-          adipisicing
-          elit. Dolor sed suscipit temporibus explicabo sit earum dicta incidunt
-          qui et ipsum nihil pariatur aut nostrum vero, unde minus,
-          reprehenderit nam quas fugiat sapiente ex aperiam veniam? Nobis
-          officia fuga reiciendis voluptates ex esse, consequuntur inventore,
-          voluptate maiores quod, sunt assumenda nostrum veritatis ea vero error
-          explicabo eos. Fugiat voluptate saepe assumenda eos nihil eum
-          accusantium quod cum facilis error, tempore debitis hic nesciunt natus
-          adipisci quibusdam alias nisi totam animi nostrum accusamus quos
-          consequatur. Id doloribus voluptas ab nesciunt sit culpa quidem libero
-          autem at. Sunt, exercitationem assumenda? Quas delectus unde fuga
-          consequuntur sed nostrum? Esse accusantium quis, cupiditate, corrupti
-          tempora deserunt totam mollitia ab officiis similique eos optio quos
-          dolor perferendis nisi nulla ea voluptas distinctio blanditiis cum
-          deleniti adipisci! Aliquid dicta, culpa praesentium quasi laboriosam
-          reprehenderit quisquam eius modi libero distinctio, nisi et officia
-          debitis. Ducimus, nisi inventore minus atque ad, rem non pariatur
-          debitis nesciunt harum molestiae, quis aut adipisci sit consequuntur
-          amet. Neque illo perferendis illum. Aliquam magni odit corrupti
-          obcaecati nam quisquam modi molestias sapiente, nesciunt reprehenderit
-          esse ullam illum beatae? Ipsum dignissimos corrupti eaque minus ex,
-          blanditiis aperiam provident, minima error, tempora aliquid non
-          deleniti. <br><br></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing
+            elit. Dolor sed suscipit temporibus explicabo sit earum dicta
+            incidunt
+            qui et ipsum nihil pariatur aut nostrum vero, unde minus,
+            reprehenderit nam quas fugiat sapiente ex aperiam veniam? Nobis
+            officia fuga reiciendis voluptates ex esse, consequuntur inventore,
+            voluptate maiores quod, sunt assumenda nostrum veritatis ea vero
+            error
+            explicabo eos. Fugiat voluptate saepe assumenda eos nihil eum
+            accusantium quod cum facilis error, tempore debitis hic nesciunt
+            natus
+            adipisci quibusdam alias nisi totam animi nostrum accusamus quos
+            consequatur. Id doloribus voluptas ab nesciunt sit culpa quidem
+            libero
+            autem at. Sunt, exercitationem assumenda? Quas delectus unde fuga
+            consequuntur sed nostrum? Esse accusantium quis, cupiditate,
+            corrupti
+            tempora deserunt totam mollitia ab officiis similique eos optio quos
+            dolor perferendis nisi nulla ea voluptas distinctio blanditiis cum
+            deleniti adipisci! Aliquid dicta, culpa praesentium quasi laboriosam
+            reprehenderit quisquam eius modi libero distinctio, nisi et officia
+            debitis. Ducimus, nisi inventore minus atque ad, rem non pariatur
+            debitis nesciunt harum molestiae, quis aut adipisci sit consequuntur
+            amet. Neque illo perferendis illum. Aliquam magni odit corrupti
+            obcaecati nam quisquam modi molestias sapiente, nesciunt
+            reprehenderit
+            esse ullam illum beatae? Ipsum dignissimos corrupti eaque minus ex,
+            blanditiis aperiam provident, minima error, tempora aliquid non
+            deleniti. <br><br>
+          </p>
+        </div>
 
         <p data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor sit
           amet consectetur adipisicing elit. Numquam,
@@ -245,14 +280,17 @@ h1:hover{
 
         <h2 data-aos="fade-up" data-aos-duration="2000">Portfolio</h2>
 
+        
+
         <div data-aos="fade-left" data-aos-duration="3000" class="w3-row">
           <div class="w3-half w3-border w3-car"><img
-              src="images/ball-ga6db7a1b0_1280.jpg"
+              src="Projet-Mobile-First-Git/images/ball-ga6db7a1b0_1280.jpg"
               alt="ball" class="w3-image" data-aos="zoom-in"></div>
 
           <br><br>
 
-          <p data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor
+          <p data-aos="fade-left" data-aos-duration="2000"> <br>Lorem
+            ipsum dolor
             sit amet consectetur adipisicing elit. Odit
             aspernatur, beatae accusamus quam similique, dolore assumenda soluta
             dolor repellat laudantium eius itaque ratione natus aperiam iste
@@ -275,7 +313,8 @@ h1:hover{
             <article class="w3-col m4 w3-center w3-aqua">
               <div class="w3-card w3-aqua">
                 <h3 data-aos="zoom-in">Team</h3>
-                <img src="images/Developers 1.jpg" class="w3-image"
+                <img src="Projet-Mobile-First-Git/images/Developers 1.jpg"
+                  class="w3-image"
                   alt="Developers" data-aos="zoom-in-left"
                   data-aos-duration="2000">
               </div>
@@ -284,7 +323,8 @@ h1:hover{
             <article class="w3-col m4 w3-center w3-aqua">
               <div class="w3-card">
                 <h3 data-aos="zoom-in">Working</h3>
-                <img src="images/Developers 2.jpg" class="w3-image"
+                <img src="Projet-Mobile-First-Git/images/Developers 2.jpg"
+                  class="w3-image"
                   alt="Developers" data-aos="zoom-out-down"
                   data-aos-duration="2000">
               </div>
@@ -293,11 +333,17 @@ h1:hover{
             <article class="w3-col m4 w3-center w3-aqua">
               <div class="w3-card">
                 <h3 data-aos="zoom-in">Programming</h3>
-                <img src="images/Developers 3.jpg" class="w3-image""
+                <img src="Projet-Mobile-First-Git/images/Developers 3.jpg"
+                  class="w3-image""
                   alt="Developers" data-aos="zoom-in-right"
                   data-aos-duration="2000">
+
               </div>
+
             </article>
+
+            
+          
 
           </div>
 
@@ -314,10 +360,11 @@ h1:hover{
           <div class="w3-row">
             <div data-aos="zoom-in-right" data-aos-duration="3000"
               class="w3-half w3-card w3-aqua"><img
-                src="images/contact2.jpg"
+                src="Projet-Mobile-First-Git/images/contact2.jpg"
                 alt="contact2" class="w3-image" data-aos></div>
 
             <br>
+
             <p data-aos="fade-up" data-aos-duration="2000"> <br>Lorem ipsum
               dolor sit amet consectetur adipisicing elit. Corporis
               quas repudiandae aliquam itaque rerum ipsum expedita libero
@@ -355,41 +402,79 @@ h1:hover{
 
           </section>
 
-          <!--CONTACT END-->
+          <h3 class="contact us">How to contact us?</h3>
 
-        </main>
+          <div style="display: flexbox;">
 
-        <!--MAIN END-->
+            <div class="carte">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10815.039298961465!2d4.798847563437065!3d45.77147165683349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scci%20lyon!5e0!3m2!1sfr!2sfr!4v1686735948048!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <form action="#" method="POST">
+                <label for="nom">Name:</label><br>
+                <input type="text" id="nom" name="nom" required><br><br>
 
-        <!--FOOTER START-->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
 
-        <footer>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
 
-          <div class="footer">
-            <p class="footer-p"> My Website all rights reserved 2023</p>
-            <u>
-              <li>Legal</li>
-              <li>About</li>
-              <li>Information</li>
-              
-            </ul>
+                <input type="submit" value="Send">
 
+                <br><br>
+              </div>
+              <br><br>
 
-            <aside>
-              <h1>Where to contact us?</h1>
-              <p><img src="/Projet-Mobile-First-Git/images/vimeo.png" alt="Vimeo" /><img src="/Projet-Mobile-First-Git/images/rss.png" alt="RSS" /><img src="/Projet-Mobile-First-Git/images/flickr.png" alt="Flickr" /><img src="/Projet-Mobile-First-Git/images/twitter.png" alt="Twitter" /><img src="Projet-Mobile-First-Git/images/facebook.png" alt="Facebook" /></p>
-            </aside>
-          
+            </div>
 
-          </div>
+            <!--CONTACT END-->
 
-        </footer>
+          </main>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <!--MAIN END-->
 
-        <!--FOOTER END-->
+          <!--FOOTER START-->
 
-        <script>
+          <footer data-aos="fade-down" data-aos-duration="2000">
+
+            <div class="footer">
+
+              <u>
+                <li>Legal</li>
+                <li>About</li>
+                <li>Information</li>
+                <li>Email Address:<a href="gtproject@gmail.com">
+                    gtproject@gmail.com </a> <br></li>
+                <li><a href="tel:+33711223344">Telephone Number le 07 11 22 33
+                    44</a></li>
+                <p class="footer-p"> My Website all rights reserved 2023</p>
+
+              </ul>
+
+              <aside>
+                <h3  data-aos="zoom-in-right" data-aos-duration="2000">Where to join us?</h3>
+                <p><img src="/Projet-Mobile-First-Git/images/vimeo.png"
+                    alt="Vimeo" /><img
+                    src="/Projet-Mobile-First-Git/images/rss.png" alt="RSS"><img
+                    src="/Projet-Mobile-First-Git/images/flickr.png"
+                    alt="Flickr"><a href="#"></a><img
+                    src="/Projet-Mobile-First-Git/images/twitter.png"
+                    alt="Twitter" /><img
+                    src="Projet-Mobile-First-Git/images/facebook.png"
+                    alt="Facebook" /></p>
+              </aside>
+
+            </div>
+
+          </footer>
+
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+          <!--FOOTER END-->
+
+          <script>
 
       AOS.init();
 
@@ -419,5 +504,5 @@ h1:hover{
       });
   </script>
 
-      </body>
-    </html>
+        </body>
+      </html>
